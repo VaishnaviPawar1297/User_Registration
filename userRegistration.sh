@@ -26,12 +26,3 @@ else
 	echo "Invalid Last Name"
 
 fi
-
-patEmailId="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-
-if [[ $emailId =~ $patEmailId ]]
-then
-	echo "Valid Email Id"
-else
-	echo "Invalid Email Id"
-fi
