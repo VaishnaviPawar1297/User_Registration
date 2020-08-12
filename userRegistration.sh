@@ -6,6 +6,8 @@ read firstName
 echo "Enter Last Name : "
 read lastName
 
+echo "Enter your Email Id"
+read emailId
 pattern1="^[A-Z]{1}[A-Za-z]{3,}$"
 
 if [[ $firstName =~ $pattern ]]
@@ -23,4 +25,13 @@ then
 else
 	echo "Invalid Last Name"
 
+fi
+
+patEmailId="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+
+if [[ $emailId =~ $patEmailId ]]
+then
+	echo "Valid Email Id"
+else
+	echo "Invalid Email Id"
 fi
