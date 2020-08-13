@@ -52,7 +52,7 @@ else
 	echo "Invalid Mobile No."
 fi
 
-patPassword="^[0-9a-zA-Z]{8,}$"
+patPassword="^[0-9a-z]{8,}$"
 
 if [[ $password =~ $patPasswrd ]]
 then
